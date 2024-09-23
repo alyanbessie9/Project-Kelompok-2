@@ -1,0 +1,150 @@
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <!-- About Us Section -->
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>We are a company committed to providing the best services to our customers. Our mission is to deliver quality and excellence in everything we do.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <!-- Contact Info Section -->
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+                <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+</script>
+
+<style>
+    /* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column p, .footer-column ul, .footer-column a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    color: #007BFF;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    background-color: #007BFF;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-column {
+        margin: 15px 0;
+    }
+}
+
+</style>

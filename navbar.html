@@ -1,0 +1,122 @@
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="brand">BrandName</a>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item active">Home</a></li>
+            <li><a href="#" class="nav-item">About</a></li>
+            <li><a href="#" class="nav-item">Services</a></li>
+            <li><a href="#" class="nav-item">Portfolio</a></li>
+            <li><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Desktop navbar links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #555;
+}
+
+.active {
+    background-color: #007BFF;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        background-color: #333;
+        height: 100vh;
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+</style>
